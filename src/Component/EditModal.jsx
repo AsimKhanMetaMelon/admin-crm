@@ -65,7 +65,7 @@ function EditModal(props) {
       setTransportDate(initialValues.transportDate || "");
 
       // Also, consider removing the alert for flightDate as it could lead to null alert messages
-      alert(initialValues.flightDate);
+      // alert(initialValues.flightDate);
     }
   }, [initialValues]);
 
@@ -81,7 +81,7 @@ function EditModal(props) {
     const parsedReceivedAmount = parseFloat(receivedAmount);
     const parsedSalesPrice = parseFloat(salesPrice);
     // alert(parsedSalesPrice)
-    alert();
+    // alert();
     // Calculate total cost
     const totalCost =
       parsedHotel +
@@ -120,8 +120,8 @@ function EditModal(props) {
       insuranceDate,
       remaining,
     };
-    alert(flightDate);
-    alert(hotelDate);
+    // alert(flightDate);
+    // alert(hotelDate);
     onUpdate(formData);
     const updatedata = doc(db, "data", id);
     await updateDoc(updatedata, {

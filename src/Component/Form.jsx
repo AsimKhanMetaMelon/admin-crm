@@ -63,12 +63,12 @@ function Form() {
       parsedInsurance +
       parsedFlight +
       parsedTransport;
-    alert(totalCost);
+    // alert(totalCost);
     // Calculate profit
     const remaining = parsedSalesPrice - parsedReceivedAmount;
-    alert(remaining);
+    // alert(remaining);
     const profit = parsedReceivedAmount - totalCost;
-    alert(profit);
+    // alert(profit);
 
     try {
       const docRef = await addDoc(value, {
