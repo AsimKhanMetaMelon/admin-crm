@@ -36,7 +36,7 @@ function List() {
 
   useEffect(() => {
     getDataFromFirestore();
-  }, []);
+  }, [editModalOpen]);
 
   const handleEdit = (item) => {
     setEditItem(item);
@@ -227,6 +227,9 @@ function List() {
                 Remaining
               </th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
+                Visa Country
+              </th>
+              <th className="border border-gray-500 px-1 py-1 text-xs">
                 Status
               </th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
@@ -303,6 +306,9 @@ function List() {
                 </td>
                 <td className="border border-gray-500 px-1  text-xs py-1">
                   {item?.remaining}
+                </td>
+                <td className="border border-gray-500 px-1  text-xs py-1">
+                  {item?.visaCountry}
                 </td>
                 <td className="border border-gray-500 px-1  text-xs py-1">
                   {item?.status}

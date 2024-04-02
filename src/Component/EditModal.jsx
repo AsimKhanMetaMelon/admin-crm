@@ -34,6 +34,7 @@ function EditModal(props) {
   const [flightDate, setflightDate] = useState("");
   const [transportDate, setTransportDate] = useState("");
   const [hotelDate, sethotelDate] = useState("");
+  const [visaCountry, setVisaCountry] = useState("");
   const [id, setId] = useState("");
 
   const db = getFirestore(app);
@@ -63,6 +64,7 @@ function EditModal(props) {
       setinsuranceDate(initialValues.insuranceDate || "");
       setflightDate(initialValues.flightDate || "");
       setTransportDate(initialValues.transportDate || "");
+      setVisaCountry(initialValues.visaCountry || "");
 
       // Also, consider removing the alert for flightDate as it could lead to null alert messages
       // alert(initialValues.flightDate);
@@ -119,6 +121,7 @@ function EditModal(props) {
       transportDate,
       insuranceDate,
       remaining,
+      visaCountry,
     };
     // alert(flightDate);
     // alert(hotelDate);
@@ -147,6 +150,7 @@ function EditModal(props) {
       transportDate,
       insuranceDate,
       remaining,
+      visaCountry,
     });
 
     onClose();
@@ -491,19 +495,44 @@ function EditModal(props) {
                 <div className="col-span-1">
                   <label
                     className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                    htmlFor="profit"
+                    htmlFor="visa-country"
                   >
-                    Profit
+                    Visa Country
                   </label>
-                  <input
-                    disabled
+                  <select
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                    id="profit"
-                    type="number"
-                    placeholder="Profit"
-                    // value={profit}
-                    // onChange={(e) => setProfit(e.target.value)}
-                  />
+                    id="visa-country"
+                    value={visaCountry}
+                    onChange={(e) => setVisaCountry(e.target.value)}
+                  >
+                    <option value="">Select Visa Country</option>
+                    <option value="Austria">Austria</option>
+                    <option value="France">France</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Lithuania">Lithuania</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Czech Republic">Czech Republic</option>
+                    <option value="Greece">Greece</option>
+                    <option value="Liechtenstein">Liechtenstein</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Hungary">Hungary</option>
+                    <option value="Luxembourg">Luxembourg</option>
+                    <option value="Slovakia">Slovakia</option>
+                    <option value="Estonia">Estonia</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Malta">Malta</option>
+                    <option value="Slovenia">Slovenia</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Spain">Spain</option>
+                  </select>
                 </div>
               </div>
 
