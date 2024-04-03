@@ -185,7 +185,7 @@ function List() {
                 Sale Price
               </th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
-                ACC P Method
+                Contact Number
               </th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Hotel Cost
@@ -262,7 +262,7 @@ function List() {
                   {item?.salesPrice}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
-                  {item?.AccPMethod}
+                  {item?.contact}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.hotel}
@@ -294,7 +294,7 @@ function List() {
                 <td className="border border-gray-500 text-xs px-1 py-1">
                   {item?.transportDate}
                 </td>
-                <td className="border border-gray-500 px-1 text-xs py-2">
+                <td className="border border-gray-500 px-1 text-xs py-1">
                   {item?.totalCost}
                 </td>
                 <td

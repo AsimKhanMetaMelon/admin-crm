@@ -19,7 +19,7 @@ function Form() {
   const [cpMethod, setCpMethod] = useState("");
   const [receivedAmount, setReceivedAmount] = useState(0);
   const [salesPrice, setSalesPrice] = useState(0);
-  const [AccPMethod, setAccPMethod] = useState("");
+  const [contact, setContact] = useState("");
   const [hotel, setHotel] = useState(0);
   const [visa, setVisa] = useState(0);
   const [insurance, setInsurance] = useState(0);
@@ -80,7 +80,7 @@ function Form() {
         cpMethod,
         receivedAmount,
         salesPrice,
-        AccPMethod,
+        contact,
         hotel,
         visa,
         insurance,
@@ -107,7 +107,7 @@ function Form() {
       setCpMethod("");
       setReceivedAmount("");
       setSalesPrice("");
-      // setAccPMethod('');
+      // setContact('');
       setHotel("");
       setVisa("");
       setInsurance("");
@@ -252,17 +252,17 @@ function Form() {
           <div className="col-span-1">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              htmlFor="accPMethod"
+              htmlFor="contact"
             >
-              ACC.P.Method
+              Contact Number
             </label>
             <input
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              id="accPMethod"
-              type="number"
-              placeholder="ACC.P Method"
-              value={AccPMethod}
-              onChange={(e) => setAccPMethod(e.target.value)}
+              id="contact"
+              type="text"
+              placeholder="Enter Contact Number "
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
             />
           </div>
           <div className="col-span-1">
