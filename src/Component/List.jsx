@@ -172,66 +172,50 @@ function List() {
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Customer Name
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Service
-              </th>
+              <th className="border border-gray-500 text-xs">Service</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 C.P Method
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
+              <th className="border border-gray-500  text-xs">
                 Received Amount
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Sale Price
-              </th>
+              <th className="border border-gray-500  text-xs">Sale Price</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Contact Number
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Hotel Cost
-              </th>
+              <th className="border border-gray-500  text-xs">Hotel Cost</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Hotel Cost Date
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Visa Cost
-              </th>
+              <th className="border border-gray-500  text-xs">Visa Cost</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Visa Cost Date
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
+              <th className="border border-gray-500  text-xs">
                 Insurance Cost
               </th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Insurance Cost Date
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Flight Cost
-              </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
+              <th className="border border-gray-500  text-xs">Flight Cost</th>
+              <th className="border border-gray-500  text-xs">
                 Flight Cost Date
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
+              <th className="border border-gray-500  text-xs">
                 Transport Cost
               </th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Transport Cost Date
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Total Cost
-              </th>
+              <th className="border border-gray-500  text-xs">Total Cost</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Profit
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Remaining
-              </th>
+              <th className="border border-gray-500  text-xs">Remaining</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Visa Country
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Status
-              </th>
+              <th className="border border-gray-500 text-xs">Status</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Actions
               </th>
@@ -249,52 +233,52 @@ function List() {
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.customerName}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.service}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.cpMethod}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.receivedAmount}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.salesPrice}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.contact}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.hotel}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.hotelDate}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.visa}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.visaDate}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.insurance}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.insuranceDate}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.flight}
                 </td>
                 <td className="border border-gray-500 px-1 py-1 text-xs">
                   {item?.flightDate}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
+                <td className="border border-gray-500  text-xs">
                   {item?.transport}
                 </td>
                 <td className="border border-gray-500 text-xs px-1 py-1">
                   {item?.transportDate}
                 </td>
-                <td className="border border-gray-500 px-1 text-xs py-1">
+                <td className="border border-gray-500 text-xs">
                   {item?.totalCost}
                 </td>
                 <td
@@ -304,10 +288,10 @@ function List() {
                 >
                   {item?.profit}
                 </td>
-                <td className="border border-gray-500 px-1  text-xs py-1">
+                <td className="border border-gray-500  text-xs ">
                   {item?.remaining}
                 </td>
-                <td className="border border-gray-500 px-1  text-xs py-1">
+                <td className="border border-gray-500   text-xs ">
                   {item?.visaCountry}
                 </td>
                 <td className="border border-gray-500 px-1  text-xs py-1">
