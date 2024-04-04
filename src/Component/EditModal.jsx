@@ -162,7 +162,9 @@ function EditModal(props) {
         <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
           <div className="bg-white p-8 rounded-lg max-w-full md:max-w-3xl max-h-screen overflow-auto">
             <form className="w-full" onSubmit={handleSubmit}>
-              <h2 className="text-2xl font-bold mb-4 text-center">id : {id}</h2>
+              <h2 className="text-2xl font-bold mb-4 text-center">
+                Edit Customer Record
+              </h2>
 
               {/* row 1 */}
               <div className="grid grid-cols-4 gap-6">
