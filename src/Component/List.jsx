@@ -158,7 +158,7 @@ function List() {
         Generate PDF
       </button>
       {loading ? (
-        <div className="flex justify-center align-middle">
+        <div className="flex justify-center ">
           <p>Data is loading...</p>
         </div>
       ) : (
@@ -184,29 +184,19 @@ function List() {
                 Contact Number
               </th>
               <th className="border border-gray-500  text-xs">Hotel Cost</th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Hotel Cost Date
-              </th>
+
               <th className="border border-gray-500  text-xs">Visa Cost</th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Visa Cost Date
-              </th>
+
               <th className="border border-gray-500  text-xs">
                 Insurance Cost
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Insurance Cost Date
-              </th>
+
               <th className="border border-gray-500  text-xs">Flight Cost</th>
-              <th className="border border-gray-500  text-xs">
-                Flight Cost Date
-              </th>
+
               <th className="border border-gray-500  text-xs">
                 Transport Cost
               </th>
-              <th className="border border-gray-500 px-1 py-1 text-xs">
-                Transport Cost Date
-              </th>
+
               <th className="border border-gray-500  text-xs">Total Cost</th>
               <th className="border border-gray-500 px-1 py-1 text-xs">
                 Profit
@@ -251,33 +241,23 @@ function List() {
                 <td className="border border-gray-500  text-xs">
                   {item?.hotel}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
-                  {item?.hotelDate}
-                </td>
+
                 <td className="border border-gray-500  text-xs">
                   {item?.visa}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
-                  {item?.visaDate}
-                </td>
+
                 <td className="border border-gray-500  text-xs">
                   {item?.insurance}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
-                  {item?.insuranceDate}
-                </td>
+
                 <td className="border border-gray-500  text-xs">
                   {item?.flight}
                 </td>
-                <td className="border border-gray-500 px-1 py-1 text-xs">
-                  {item?.flightDate}
-                </td>
+
                 <td className="border border-gray-500  text-xs">
                   {item?.transport}
                 </td>
-                <td className="border border-gray-500 text-xs px-1 py-1">
-                  {item?.transportDate}
-                </td>
+
                 <td className="border border-gray-500 text-xs">
                   {item?.totalCost}
                 </td>
